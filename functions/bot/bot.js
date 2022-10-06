@@ -1,10 +1,16 @@
 const { Telegraf } = require("telegraf")
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
+const web_link = "https://cheery-platypus-094af3.netlify.app/";
+
 bot.start(ctx => {
   console.log("Received /start command")
   try {
-    return ctx.reply("Hi")
+    return ctx.reply("Welcome", {
+        reply_markup: {
+          keyboard: [[{ text: "Open App", web_app: { url: web_link } }]],
+        },
+      })
   } catch (e) {
     console.error("error in start action:", e)
     return ctx.reply("Error occured")
