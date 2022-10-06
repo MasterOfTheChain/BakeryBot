@@ -1,0 +1,26 @@
+{
+  "name": "bakerybot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterOfTheChain/BakeryBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MasterOfTheChain/BakeryBot/issues"
+  },
+  "homepage": "https://github.com/MasterOfTheChain/BakeryBot#readme",
+  "dependencies": {
+    "lambda": "^0.10.3",
+    "netlify": "^12.0.1",
+    "netlify-lambda": "^2.0.15",
+    "telegraf": "^4.10.0"
+  }
+}
