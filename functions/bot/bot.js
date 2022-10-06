@@ -6,9 +6,9 @@ const web_link = "https://cheery-platypus-094af3.netlify.app/";
 bot.start(ctx => {
   console.log("Received /start command")
   try {
-    return ctx.reply("Welcome", {
+    return ctx.reply("Welcome to The Bakery test bot", {
         reply_markup: {
-          keyboard: [[{ text: "Open App", web_app: { url: web_link } }]],
+          keyboard: [[{ text: "Open dApp", web_app: { url: web_link } }]],
         },
       })
   } catch (e) {
