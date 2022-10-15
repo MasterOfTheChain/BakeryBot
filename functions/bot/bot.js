@@ -1,8 +1,8 @@
 const { Telegraf } = require("telegraf")
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
-const web_link = "https://cheery-platypus-094af3.netlify.app/";
-
+const web_link = "https://doughpad.com/exchange";
+//https://cheery-platypus-094af3.netlify.app/
 bot.start(ctx => {
   console.log("Received /start command")
   try {
